@@ -1,0 +1,129 @@
+<!-- Hero Section -->
+<section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-gray-50 to-gray-100">
+  <h1 class="text-5xl font-bold">Junior Full-Stack Developer</h1>
+  <p class="mt-4 text-lg text-gray-600">
+    Bridging 10+ Years of IT Project Management with Modern Web Development
+  </p>
+  <div class="mt-8 flex space-x-4">
+    <a href="#contact" class="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700">Contact Me</a>
+    <a href="#portfolio" class="px-6 py-3 bg-white border border-gray-200 rounded text-gray-700 hover:bg-gray-50">View Portfolio</a>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div class="flex justify-center">
+      <%= image_tag "eu.jpg", alt: "Máira Senna", class: "rounded-lg shadow-lg w-80" %>
+    </div>
+    <div>
+      <h2 class="text-3xl font-bold">About Me</h2>
+      <p class="mt-4 text-lg text-gray-600">
+        With over a decade of experience in IT project management, I've successfully led numerous digital transformations. Now, I'm combining my project expertise with cutting-edge development skills to create impactful web solutions.
+      </p>
+      <ul class="mt-6 space-y-4">
+        <li class="flex items-center">
+          <span class="w-6 h-6 text-blue-600">💻</span>
+          <span class="ml-3">Full-Stack Development</span>
+        </li>
+        <li class="flex items-center">
+          <span class="w-6 h-6 text-blue-600">📋</span>
+          <span class="ml-3">IT Project Management</span>
+        </li>
+        <li class="flex items-center">
+          <span class="w-6 h-6 text-blue-600">📆</span>
+          <span class="ml-3">10+ Years Experience</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center">Skills & Expertise</h2>
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h3 class="text-xl font-bold mb-4">Development</h3>
+        <ul class="text-gray-600 space-y-2">
+          <li>JavaScript / TypeScript</li>
+          <li>React.js</li>
+          <li>Node.js</li>
+          <li>HTML5 / CSS3</li>
+          <li>Ruby on Rails</li>
+        </ul>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h3 class="text-xl font-bold mb-4">Project Management</h3>
+        <ul class="text-gray-600 space-y-2">
+          <li>Agile Methodologies</li>
+          <li>Scrum</li>
+          <li>Risk Management</li>
+          <li>Stakeholder Management</li>
+          <li>Team Leadership</li>
+        </ul>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h3 class="text-xl font-bold mb-4">Tools & Methods</h3>
+        <ul class="text-gray-600 space-y-2">
+          <li>Git / GitHub</li>
+          <li>VS Code</li>
+          <li>Jira</li>
+          <li>Figma</li>
+          <li>REST APIs</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center">Recent Projects</h2>
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <%= image_tag "giggoers.png", class: "w-full h-48 object-cover" %>
+        <div class="p-6">
+          <h3 class="text-xl font-bold">GigGoers</h3>
+          <p class="mt-2 text-gray-600">
+            Mobile app to streamline the discovery of concerts and music festivals in the city of São Paulo.
+          </p>
+          <span class="inline-block mt-4 text-sm bg-gray-200 text-gray-800 px-2 py-1 rounded">Ruby on Rails</span>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <%= image_tag "cheftoi.png", class: "w-full h-48 object-cover" %>
+        <div class="p-6">
+          <h3 class="text-xl font-bold">ChefToi</h3>
+          <p class="mt-2 text-gray-600">
+            Online marketplace platform developed as an MVP to connect personal chefs with clients.
+          </p>
+          <span class="inline-block mt-4 text-sm bg-gray-200 text-gray-800 px-2 py-1 rounded">Ruby on Rails</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-3xl font-bold">Let's Connect</h2>
+    <p class="mt-4 text-lg text-gray-600">
+      I'm currently open to new opportunities and would love to hear from you. Whether you have a question or just want to say hi, feel free to reach out!
+    </p>
+    <div class="mt-6 flex justify-center space-x-6">
+      <a href="https://github.com/msma87" class="text-gray-600 hover:text-gray-900">
+        <span>🐙</span>
+      </a>
+      <a href="https://linkedin.com/in/mairasenna" class="text-gray-600 hover:text-gray-900">
+        <span>💼</span>
+      </a>
+      <a href="mailto:mairasenna@gmail.com" class="text-gray-600 hover:text-gray-900">
+        <span>📧</span>
+      </a>
+    </div>
+  </div>
+</section>
