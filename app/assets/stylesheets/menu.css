@@ -1,14 +1,30 @@
-
 .mobile-menu {
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
-  width: 16rem;
+  width: 16rem; /* Or adjust as needed */
+  background-color: white;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
+  z-index: 50; /* Ensure it’s above the overlay */
 }
 
 .mobile-menu.open {
   transform: translateX(0);
+}
+
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 40;
+}
+
+.menu-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
 }

@@ -1,0 +1,78 @@
+<!-- Navbar -->
+<nav class="fixed w-full bg-white shadow-md z-30">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <!-- Button for Home -->
+<button
+  onclick="window.location.href='/'"
+  class="font-bold text-lg text-blue-600 hover:text-blue-700"
+>
+  Máira's Portfolio
+</button>
+
+<div class="hidden md:flex space-x-6">
+  <!-- Button for About -->
+  <button
+    onclick="window.location.href='#about'"
+    class="text-gray-600 hover:text-blue-600"
+  >
+    About
+  </button>
+
+  <!-- Button for Skills -->
+  <button
+    onclick="window.location.href='#skills'"
+    class="text-gray-600 hover:text-blue-600"
+  >
+    Skills
+  </button>
+
+  <!-- Button for Portfolio -->
+  <button
+    onclick="window.location.href='#portfolio'"
+    class="text-gray-600 hover:text-blue-600"
+  >
+    Portfolio
+  </button>
+
+  <!-- Button for Contact -->
+  <button
+    onclick="window.location.href='#contact'"
+    class="text-gray-600 hover:text-blue-600"
+  >
+    Contact
+  </button>
+</div>
+
+      <button
+        id="menu-btn"
+        class="md:hidden p-2 text-gray-600 hover:text-blue-600"
+      >
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div id="menu-overlay" class="menu-overlay"></div>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="mobile-menu">
+  <button
+    id="close-menu-btn"
+    class="absolute top-4 right-4 p-2 text-gray-600 hover:text-blue-600"
+  >
+    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  </button>
+  <nav>
+    <a href="#about" class="block py-3 px-4">About</a>
+    <a href="#skills" class="block py-3 px-4">Skills</a>
+    <a href="#portfolio" class="block py-3 px-4">Portfolio</a>
+    <a href="#contact" class="block py-3 px-4">Contact</a>
+  </nav>
+</div>
