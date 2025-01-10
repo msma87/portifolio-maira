@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  root "pages#home"
+  get 'portfolio/show'
+  # Route for individual portfolio projects
+  get 'portfolio/:project', to: 'portfolio#show', as: 'portfolio'
+
+  # Root route (your current home page)
+  root 'pages#home'
 end
