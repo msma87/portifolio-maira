@@ -3,7 +3,7 @@
   <div class="container">
     <h1 class="display-4 fw-bold">Junior Full-Stack Developer</h1>
     <p class="mt-3 text-muted">
-      Bridging 10+ Years of IT Project Management with Modern Web Development
+      Bridging 10+ Years of IT Projects with Modern Web Development
     </p>
     <div class="mt-4 d-flex justify-content-center gap-3">
       <!-- Green Button -->
@@ -32,9 +32,6 @@
     window.open(filePath, '_blank');
   }
 </script>
-
-
-
     </div>
   </div>
 </section>
@@ -66,7 +63,7 @@
           When I’m not <strong>coding</strong> or brainstorming, you’ll probably find me on the <strong>tennis court</strong>, out for a <strong>run</strong>, or hanging out with <strong>Sheik</strong>. Let’s build something amazing together!
         </p>
       </div>
-      <ul class="mt-6 space-y-4">
+      <%# <ul class="mt-6 space-y-4">
         <li class="flex items-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-terminal w-5 h-5 text-blue-600"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" x2="20" y1="19" y2="19"></line></svg>
           <span class="ml-3">Full-Stack Web Development</span>
@@ -79,7 +76,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-5 h-5 text-blue-600"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
           <span class="ml-3">10+ Years IT Experience</span>
         </li>
-      </ul>
+      </ul> %>
     </div>
   </div>
 </section>
@@ -146,19 +143,19 @@
 <section id="portfolio" class="py-16 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 class="text-3xl font-bold text-center">Recent Projects</h2>
-    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Grid container -->
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
       <!-- GigGoers Project Card -->
       <button
-        onclick="window.location.href='<%= portfolio_path(project: 'giggoers') %>'"
-        class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:transform hover:scale-105 w-full text-left project-card">
-
-        <%= image_tag 'giggoers/home.png', class: 'w-full h-48 object-cover' %>
+        onclick="openProject('https://youtu.be/lbNNSoH8Y7M?t=1886')"
+        class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:transform hover:scale-105 text-left project-card">
+        <img src="/assets/giggoers/home3.png" class="w-full h-48 object-scale-down" alt="GigGoers">
         <div class="p-6">
           <div class="flex justify-between items-center">
             <h3 class="text-xl font-bold">GigGoers</h3>
             <span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800">Offline</span>
           </div>
-          <p class="mt-2 text-gray-600 text-left">
+          <p class="mt-2 text-gray-600">
             Mobile app to streamline the discovery of concerts and music festivals in the city of São Paulo.
           </p>
             <span class="badge bg-danger text-white me-2 mt-2">Ruby on Rails</span> <!-- Red for Rails -->
@@ -166,15 +163,14 @@
             <span class="badge bg-primary text-white me-2 mt-2">CSS</span> <!-- Blue for CSS -->
             <span class="badge bg-warning text-dark me-2 mt-2">JavaScript</span> <!-- Yellow for JavaScript -->
             <span class="badge mt-2" style="background-color: #7952b3; color: #ffffff;">Bootstrap</span><!-- Custom Purple for Bootstrap -->
-
         </div>
       </button>
 
       <!-- ChefToi Project Card -->
       <button
-        onclick="window.location.href='<%= portfolio_path(project: 'cheftoi') %>'"
-        class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:transform hover:scale-105 w-full text-left project-card">
-        <%= image_tag 'cheftoi/home.png', class: 'w-full h-48 object-cover' %>
+        onclick="openProject('https://github.com/msma87/cheftoi')"
+        class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:transform hover:scale-105 text-left project-card">
+        <img src="/assets/cheftoi/home.png" class="w-full h-48 object-contain" alt="ChefToi">
         <div class="p-6">
           <div class="flex justify-between items-center">
             <h3 class="text-xl font-bold">ChefToi</h3>
@@ -190,9 +186,30 @@
             <span class="badge mt-2" style="background-color: #7952b3; color: #ffffff;">Bootstrap</span><!-- Custom Purple for Bootstrap -->
         </div>
       </button>
+
+      <!-- Chronos Project Card -->
+      <button
+        onclick="openProject('https://podioconcursos.tutory.com.br/painel/')"
+        class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:transform hover:scale-105 text-left project-card">
+        <img src="/assets/chronos/home.png" class="w-full h-48 object-contain" alt="Chronos">
+        <div class="p-6">
+          <div class="flex justify-between items-center">
+            <h3 class="text-xl font-bold">Chronos</h3>
+            <span class="px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800">Offline</span>
+          </div>
+          <p class="mt-2 text-gray-600">
+            Visual identity design for the tutoring platform of Chronos company.
+          </p>
+            <span class="badge me-2 mt-2" style="background-color: #f16529; color: #ffffff;">HTML</span> <!-- Custom Orange for HTML -->
+            <span class="badge bg-primary text-white me-2 mt-2">CSS</span> <!-- Blue for CSS -->
+      </button>
     </div>
   </div>
 </section>
+
+
+
+
 
 
   <!-- Contact Section -->
