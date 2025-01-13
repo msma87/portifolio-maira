@@ -1,8 +1,14 @@
-<!-- Hero Section -->
-<section id="hero" class="min-vh-100 d-flex flex-column justify-content-center align-items-center text-center bg-light">
+<section id="hero"
+  class="min-vh-100 d-flex flex-column justify-content-center align-items-center text-center"
+  style="background-image: url('<%= asset_path('background.png') %>');
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         filter: none;">
   <div class="container">
-    <h1 class="display-4 fw-bold">Junior Full-Stack Developer</h1>
-    <p class="mt-3 text-muted">
+    <!-- Para garantir que o texto seja legível sobre a imagem -->
+    <h1 class="display-4 fw-bold" style="color: #003366; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">Junior Full-Stack Developer</h1> <!-- Azul escuro -->
+    <p class="mt-3" style="color: #003366;">
       Bridging 10+ Years of IT Projects with Modern Web Development
     </p>
     <div class="mt-4 d-flex justify-content-center gap-3">
@@ -45,22 +51,25 @@
 <section id="about" class="py-16 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
     <div class="flex justify-center">
-      <%= image_tag "eu.jpg", alt: "Máira Senna", class: "rounded-lg shadow-lg w-100" %>
+      <%= image_tag "euesheik.jpg", alt: "Máira Senna", class: "rounded-lg shadow-lg w-100" %>
     </div>
     <div>
       <h2 class="text-3xl font-bold py-2">About Me</h2>
-      <div class="mt-4 text-lg text-gray-600 space-y-4">
-        <p class="text-justify">
+      <div class="mt-4 text-lg text-gray-600">
+        <p class="text-left">
           Hi there! I’m <strong>Máira Senna</strong>, and this is my dog <strong>Sheik</strong> in the picture.
           </p>
-        <p class="text-justify">
+        <p class="text-left ml-2">
           I’m a <strong>tech enthusiast</strong> with over <strong>10 years of experience</strong> in <strong>IT projects</strong> across various roles, backed by a strong foundation in <strong>Business Administration</strong>. Throughout my journey, I’ve developed a passion for tackling <strong>challenges</strong> and transforming ideas into <strong>practical, innovative solutions</strong> that make an impact.
         </p>
-        <p class="text-justify">
+        <p class="text-left">
           Now, I’m diving into the exciting world of <strong>web development</strong>, bringing all my <strong>project management know-how</strong> with me. I thrive on connecting the dots between <strong>tech teams</strong> and business goals, crafting <strong>solutions</strong> that are as <strong>functional</strong> as they are impactful.
         </p>
-        <p class="text-justify">
-          When I’m not <strong>coding</strong> or brainstorming, you’ll probably find me on the <strong>tennis court</strong>, out for a <strong>run</strong>, or hanging out with <strong>Sheik</strong>. Let’s build something amazing together!
+        <p class="text-left">
+          When I’m not <strong>coding</strong> or studying, you’ll probably find me on the <strong>tennis court</strong>, out for a <strong>run</strong>, or hanging out with <strong>Sheik</strong>.
+        </p>
+        <p class="text-left">
+          Let’s build something amazing together!
         </p>
       </div>
       <%# <ul class="mt-6 space-y-4">
