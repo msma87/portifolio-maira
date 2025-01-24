@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
-  get 'portfolio/show'
-  # Route for individual portfolio projects
-  get 'portfolio/:project', to: 'portfolio#show', as: 'portfolio'
-
   # Root route (your current home page)
   root 'pages#home'
+
+  # Route for individual portfolio projects
+  get "/portfolio/en", to: "portfolio#english", as: :english_portfolio
+  get "/portfolio/pt", to: "portfolio#portuguese", as: :portuguese_portfolio
+
+  get 'portfolio/show'
 end

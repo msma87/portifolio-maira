@@ -103,3 +103,134 @@
   background-color: #e86400;
 }
 
+.flag-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #dbeafe, #bfdbfe);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow effect on hover */
+.flag-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Base button styles */
+.flag-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #dbeafe, #bfdbfe);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d; /* Enable 3D transformations */
+}
+
+/* Glow effect on hover */
+.flag-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0) 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  border-radius: 50%;
+  transform: scale(0);
+}
+
+/* Hover effects */
+.flag-button:hover {
+  transform: scale(1.1) rotate(5deg) translateZ(20px); /* 3D pop effect */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 0 40px rgba(59, 130, 246, 0.5); /* Glowing shadow */
+  background: linear-gradient(145deg, #bfdbfe, #dbeafe);
+}
+
+.flag-button:hover::before {
+  opacity: 1;
+  transform: scale(1.5); /* Expand the glow */
+}
+
+/* Content inside the button */
+.flag-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease;
+  transform-style: preserve-3d; /* Enable 3D for child elements */
+}
+
+.flag-button:hover .flag-content {
+  transform: translateY(-5px) translateZ(10px); /* 3D lift effect */
+}
+
+/* Flag image styles */
+.flag-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)); /* Add a subtle shadow */
+}
+
+.flag-button:hover .flag-image {
+  transform: scale(1.2) rotate(10deg) translateZ(10px); /* 3D rotation and scale */
+  filter: drop-shadow(0 8px 16px rgba(59, 130, 246, 0.5)); /* Glowing shadow */
+}
+
+/* Text styles */
+.flag-text {
+  color: #2563eb;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  transition: transform 0.4s ease, color 0.4s ease, text-shadow 0.4s ease;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle text shadow */
+}
+
+.flag-button:hover .flag-text {
+  transform: translateY(5px) translateZ(10px); /* 3D lift effect */
+  color: #1e40af; /* Darker blue for contrast */
+  text-shadow: 0 4px 8px rgba(59, 130, 246, 0.5); /* Glowing text shadow */
+}
+
+/* Add a subtle pulse animation on hover */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.flag-button:hover {
+  animation: pulse 1.5s infinite ease-in-out; /* Add a pulse animation */
+}
