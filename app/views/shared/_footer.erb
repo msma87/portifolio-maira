@@ -1,5 +1,9 @@
 <div class="bg-gray-900 text-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center">
-    <p class="text-sm sm:text-base">&copy; <%= Date.today.year %> Máira Senna. All rights reserved.</p>
+    <% if @language == "en" %>
+      <p class="text-sm sm:text-base">&copy; <%= Date.today.year %> Máira Senna. All rights reserved.</p>
+    <% else %>
+      <p class="text-sm sm:text-base">&copy; <%= Date.today.year %> Máira Senna. Todos os direitos reservados.</p>
+    <% end %>
   </div>
 </div>

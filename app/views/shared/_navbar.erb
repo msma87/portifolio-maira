@@ -7,15 +7,23 @@
         onclick="window.location.href='/'"
         class="font-bold text-lg text-blue-600 hover:text-blue-700"
       >
-        Máira's Portfolio
+        <%= @language == "en" ? "Máira's Portfolio" : "Portfólio Máira" %>
       </button>
 
       <!-- Desktop Menu -->
       <div class="hidden md:flex space-x-6">
-        <button onclick="window.location.href='#about'" class="text-gray-600 hover:text-blue-600">About</button>
-        <button onclick="window.location.href='#skills'" class="text-gray-600 hover:text-blue-600">Skills</button>
-        <button onclick="window.location.href='#portfolio'" class="text-gray-600 hover:text-blue-600">Portfolio</button>
-        <button onclick="window.location.href='#contact'" class="text-gray-600 hover:text-blue-600">Contact</button>
+        <button onclick="window.location.href='#about'" class="text-gray-600 hover:text-blue-600">
+          <%= @language == "en" ? "About Me" : "Sobre Mim" %>
+        </button>
+        <button onclick="window.location.href='#contact'" class="text-gray-600 hover:text-blue-600">
+          <%= @language == "en" ? "Contact" : "Contato" %>
+        </button>
+        <button onclick="window.location.href='#portfolio'" class="text-gray-600 hover:text-blue-600">
+          <%= @language == "en" ? "Portfolio" : "Portfólio" %>
+        </button>
+        <button onclick="window.location.href='#skills'" class="text-gray-600 hover:text-blue-600">
+          <%= @language == "en" ? "Skills" : "Habilidades" %>
+        </button>
       </div>
 
       <!-- Mobile Menu Button -->
@@ -36,12 +44,21 @@
     id="mobile-menu"
     class="hidden md:hidden flex flex-col space-y-4 bg-white shadow-md mt-2 p-4 absolute right-4 top-16 rounded-lg z-40"
   >
-    <button onclick="window.location.href='#about'" class="text-gray-600 hover:text-blue-600 text-left">About</button>
-    <button onclick="window.location.href='#skills'" class="text-gray-600 hover:text-blue-600 text-left">Skills</button>
-    <button onclick="window.location.href='#portfolio'" class="text-gray-600 hover:text-blue-600 text-left">Portfolio</button>
-    <button onclick="window.location.href='#contact'" class="text-gray-600 hover:text-blue-600 text-left">Contact</button>
+    <button onclick="window.location.href='#about'" class="text-gray-600 hover:text-blue-600 text-left">
+      <%= @language == "en" ? "About" : "Sobre Mim" %>
+    </button>
+    <button onclick="window.location.href='#skills'" class="text-gray-600 hover:text-blue-600 text-left">
+      <%= @language == "en" ? "Skills" : "Habilidades" %>
+    </button>
+    <button onclick="window.location.href='#portfolio'" class="text-gray-600 hover:text-blue-600 text-left">
+      <%= @language == "en" ? "Portfolio" : "Portfólio" %>
+    </button>
+    <button onclick="window.location.href='#contact'" class="text-gray-600 hover:text-blue-600 text-left">
+      <%= @language == "en" ? "Contact" : "Contato" %>
+    </button>
   </div>
 </nav>
+
 
 <!-- JavaScript -->
 <script>

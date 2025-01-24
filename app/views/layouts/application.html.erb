@@ -24,27 +24,16 @@
 </head>
 <body class="bg-gradient-to-b from-gray-50 to-gray-100 text-gray-900 min-h-screen flex flex-col">
 
-  <!-- Navbar -->
-  <%= render 'shared/navbar' %>
 
   <!-- Main Content -->
-  <main class="flex-grow pt-16">
+  <% if session[:language] %>
+      <%= render "shared/navbar" %>
+    <% end %>
 
-      <%= yield %>
-    </div>
-  </main>
+    <%= yield %>
 
-  <!-- Footer -->
-  <footer>
-    <%= render 'shared/footer' %>
-  </footer>
-
-  <!-- External JavaScript -->
-    <script>
-    function openProject(link) {
-      window.open(link, '_blank');
-    }
-  </script>
-
+    <% if session[:language] %>
+      <%= render "shared/footer" %>
+    <% end %>
 </body>
 </html>

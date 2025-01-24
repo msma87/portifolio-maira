@@ -3,4 +3,8 @@ import "@hotwired/turbo-rails"
 import "controllers"
 //= require menu
 
-
+<script>
+function openProject(link) {
+  window.open(link, '_blank')
+}
+</script>
