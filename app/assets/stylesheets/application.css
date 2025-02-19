@@ -14,7 +14,7 @@ html, body {
 
 /* Remove underline from all links */
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 /* Add hover effect (optional) */
