@@ -1,6 +1,6 @@
 <section id="hero"
   class="min-vh-100 d-flex flex-column justify-content-center align-items-center text-center"
-  style="background-image: url('<%= asset_path('background.png') %>');
+  style="background-image: url('<%= asset_path('background 3.png') %>');
          background-size: cover;
          background-position: center;
          background-repeat: no-repeat;
@@ -21,7 +21,7 @@
 
      <!-- Orange Button -->
       <button
-        onclick="openInNewTab('/curriculo.pdf')"
+        onclick="openInNewTab('/Currículo - Máira Senna.pdf')"
         style="padding: 12px 24px; font-size: 16px; font-weight: 500; text-align: center; color: white; background-color: #fd7e14; border: 1px solid #e86400; border-radius: 5px; box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.1);">
         Currículo
       </button>
@@ -43,49 +43,54 @@
 </section>
 
 <!-- About Section -->
-<section id="about" class="py-16 bg-white">
+<section id="about" class="py-16" style="background-color:rgb(243, 237, 229);" >
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
     <div class="flex justify-center">
       <%= image_tag "euesheik.jpg", alt: "Máira Senna", class: "rounded-lg shadow-lg w-100" %>
     </div>
     <div>
-      <h2 class="text-3xl font-bold py-2">Sobre Mim</h2>
+      <h2 class="text-3xl font-bold py-2 text-center">Sobre Mim</h2>
       <div class="mt-4 text-lg text-gray-600">
-        <p class="text-left">
-          Olá! Eu sou <strong>Máira Senna</strong> e este na foto é meu cachorro <strong>Sheik</strong>.
+        <p style="text-align: justify;">
+          Olá! Eu sou a <strong>Máira Senna</strong> e esse é o meu cachorro <strong>Sheik</strong> na foto.
         </p>
-        <p class="text-left">
-          Sou uma <strong>entusiasta de tecnologia</strong> com mais de <strong>10 anos de experiência</strong> em <strong>projetos de TI</strong> em diversas funções, apoiada por uma sólida formação em <strong>Administração de Empresas</strong>. Ao longo da minha trajetória, desenvolvi uma paixão por enfrentar <strong>desafios</strong> e transformar ideias em <strong>soluções práticas e inovadoras</strong> que fazem a diferença.
+        <p style="text-align: justify;">
+          Sou uma <strong>entusiasta de tecnologia</strong> com mais de <strong>10 anos de experiência</strong> em <strong>projetos de TI</strong> em diversas funções, com uma base sólida em <strong>Administração de Empresas</strong>. Ao longo da minha trajetória, desenvolvi uma paixão por enfrentar <strong>desafios</strong> e transformar ideias em <strong>soluções práticas e inovadoras</strong> que geram impacto real.
         </p>
-        <p class="text-left">
-          Agora, estou mergulhando no incrível mundo do <strong>desenvolvimento web</strong>, trazendo comigo todo o meu <strong>conhecimento em gestão de projetos</strong>. Meu objetivo é conectar os pontos entre <strong>equipes de tecnologia</strong> e metas de negócios, criando <strong>soluções</strong> que são tão <strong>funcionais</strong> quanto impactantes.
+        <p style="text-align: justify;">
+          Atualmente, estou mergulhando no mundo da <strong>desenvolvimento web</strong>, trazendo comigo toda a minha bagagem em <strong>gestão de projetos</strong>. Atuo como <strong>Web Developer Intern na 2Toucans</strong> e também colaboro como <strong>desenvolvedora voluntária na Comportamente</strong>, apoiando iniciativas que têm propósito e significado.
         </p>
-        <p class="text-left">
-          Quando não estou <strong>programando</strong> ou estudando, provavelmente você me encontrará na <strong>quadra de tênis</strong>, correndo ou curtindo com o <strong>Sheik</strong>
+        <p style="text-align: justify;">
+          Gosto de conectar os pontos entre <strong>equipes técnicas</strong> e os <strong>objetivos de negócio</strong>, criando <strong>soluções</strong> que sejam ao mesmo tempo <strong>funcionais</strong> e com impacto positivo.
         </p>
-        <p class="text-left">
+        <p style="text-align: justify;">
+          Quando não estou <strong>programando</strong> ou estudando, provavelmente estou na <strong>quadra de tênis</strong>, fazendo uma <strong>corrida</strong> ou curtindo um tempo com o<strong>Sheik</strong>.
+        </p>
+        <p style="text-align: justify;">
           Vamos construir algo incrível juntos!
         </p>
+
       </div>
     </div>
   </div>
 </section>
 
 <!-- Skills Section -->
-<section id="skills" class="py-16 bg-gray-50">
+<section id="skills" class="py-16" style="background-color: #e1ebed;"
+>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 class="text-3xl font-bold text-center">Experiências & Habilidades</h2>
     <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
 
       <!-- Skill Item: Desenvolvimento -->
-      <div class="bg-white p-6 shadow-lg hover:shadow-lg rounded-lg transition">
+      <div class="p-6 shadow-lg hover:shadow-lg rounded-lg transition" style="background-color:rgb(243, 237, 229);">
         <div class="flex items-center mb-4 space-x-4">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-code mr-4" viewBox="0 0 16 16">
             <path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8z"/>
           </svg>
           <h3 class="text-xl font-bold">Desenvolvimento</h3>
         </div>
-        <ul class="text-gray-600 space-y-2">
+        <ul class="space-y-2" style="background-color:rgb(243, 237, 229);">
           <li>Ruby on Rails</li>
           <li>HTML / CSS / SCSS</li>
           <li>JavaScript</li>
@@ -95,7 +100,7 @@
       </div>
 
       <!-- Skill Item: Projetos de Tecnologia -->
-      <div class="bg-white p-6 shadow-lg hover:shadow-lg rounded-lg transition">
+      <div class="p-6 shadow-lg hover:shadow-lg rounded-lg transition" style="background-color:rgb(243, 237, 229);">
         <div class="flex items-center mb-4 space-x-4">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-suitcase-lg mr-4" viewBox="0 0 16 16">
             <path d="M5 2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2h3.5A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5H14a.5.5 0 0 1-1 0H3a.5.5 0 0 1-1 0h-.5A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2zm1 0h4a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1M1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5H3V3zM15 12.5v-9a.5.5 0 0 0-.5-.5H13v10h1.5a.5.5 0 0 0 .5-.5m-3 .5V3H4v10z"/>
@@ -111,7 +116,7 @@
       </div>
 
       <!-- Skill Item: Ferramentas & Métodos -->
-      <div class="bg-white p-6 shadow-lg hover:shadow-lg rounded-lg transition">
+      <div class="p-6 shadow-lg hover:shadow-lg rounded-lg transition" style="background-color:rgb(243, 237, 229);">
         <div class="flex items-center mb-4 space-x-4">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-book mr-4" viewBox="0 0 16 16">
             <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
@@ -130,9 +135,8 @@
   </div>
 </section>
 <!-- Portfolio Section -->
-<section id="portfolio" class="py-16 bg-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="text-3xl font-bold text-center">Projetos Recentes</h2>
+<section id="portfolio" class="py-16" style="background-color:rgb(243, 237, 229);" >  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <h2 class="text-3xl font-bold text-center">Projetos Recentes</h2>
     <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
 
       <!-- Roll the Dice Project Card -->
@@ -232,7 +236,7 @@
           </div>
         </div>
       </a>
-      <!-- Filipe Tennis Card -->
+      <%# <!-- Filipe Tennis Card -->
       <a href="https://filipe-tennis.onrender.com/" target="_blank" rel="noopener noreferrer"
         class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none;">
         <div>
@@ -255,7 +259,7 @@
             <span style="background-color: #dcfce7; color: #166534; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">Shell</span>
           </div>
         </div>
-      </a>
+      </a> %>
 
       <!-- GigGoers Project Card -->
       <a href="https://giggoers-f8d886acbf20.herokuapp.com/" target="_blank" rel="noopener noreferrer"
@@ -328,7 +332,7 @@
 </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-16 bg-gray-50">
+  <section id="contact" class="py-16" style="background-color: #e1ebed;">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-3xl font-bold">Vamos nos conectar!</h2>
       <p class="mt-4 text-lg text-gray-600">

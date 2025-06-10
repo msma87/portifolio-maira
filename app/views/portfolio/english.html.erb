@@ -1,6 +1,6 @@
 <section id="hero"
   class="min-vh-100 d-flex flex-column justify-content-center align-items-center text-center"
-  style="background-image: url('<%= asset_path('background.png') %>');
+  style="background-image: url('<%= asset_path('background 3.png') %>');
          background-size: cover;
          background-position: center;
          background-repeat: no-repeat;
@@ -28,7 +28,7 @@
 
      <!-- Orange Button -->
      <button
-       onclick="openInNewTab('/resume.pdf')"
+       onclick="openInNewTab('/Resume - Máira Senna.pdf')"
        style="padding: 12px 24px; font-size: 16px; font-weight: 500; text-align: center; color: white; background-color: #fd7e14; border: 1px solid #e86400; border-radius: 5px; box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.1);">
       Resume
      </button>
@@ -43,49 +43,53 @@
 </section>
 
 <!-- About Section -->
-<section id="about" class="py-16 bg-white">
+<section id="about" class="py-16" style="background-color:rgb(243, 237, 229);" >
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
     <div class="flex justify-center">
       <%= image_tag "euesheik.jpg", alt: "Máira Senna", class: "rounded-lg shadow-lg w-100" %>
     </div>
     <div>
-      <h2 class="text-3xl font-bold py-2">About Me</h2>
+      <h2 class="text-3xl font-bold py-2 text-center">About Me</h2>
       <div class="mt-4 text-lg text-gray-600">
-        <p class="text-left">
-          Hi there! I’m <strong>Máira Senna</strong> and this is my dog <strong>Sheik</strong> in the picture.
-          </p>
-        <p class="text-left">
-          I’m a <strong>tech enthusiast</strong> with over <strong>10 years of experience</strong> in <strong>IT projects</strong> across various roles, backed by a strong foundation in <strong>Business Administration</strong>. Throughout my journey, I’ve developed a passion for tackling <strong>challenges</strong> and transforming ideas into <strong>practical, innovative solutions</strong> that make an impact.
-        </p>
-        <p class="text-left">
-          Now, I’m diving into the exciting world of <strong>web development</strong>, bringing all my <strong>project management know-how</strong> with me. I thrive on connecting the dots between <strong>tech teams</strong> and business goals, crafting <strong>solutions</strong> that are as <strong>functional</strong> as they are impactful.
-        </p>
-        <p class="text-left">
-          When I’m not <strong>coding</strong> or studying, you’ll probably find me on the <strong>tennis court</strong>, out for a <strong>run</strong>, or hanging out with <strong>Sheik</strong>.
-        </p>
-        <p class="text-left">
-          Let’s build something amazing together!
-        </p>
+<p style="text-align: justify;">
+  Hi there! I’m <strong>Máira Senna</strong> and this is my dog <strong>Sheik</strong> in the picture.
+</p>
+<p style="text-align: justify;">
+  I’m a <strong>tech enthusiast</strong> with over <strong>10 years of experience</strong> in <strong>IT projects</strong> across various roles, backed by a strong foundation in <strong>Business Administration</strong>. Throughout my journey, I’ve developed a passion for tackling <strong>challenges</strong> and transforming ideas into <strong>practical, innovative solutions</strong> that make an impact.
+</p>
+<p style="text-align: justify;">
+  Now, I’m diving into the exciting world of <strong>web development</strong>, bringing all my <strong>project management know-how</strong> with me. I’m currently working as a <strong>Web Developer Intern at 2Toucans</strong> and contributing as a <strong>volunteer Web Developer at Comportamente</strong>, where I support meaningful projects aligned with my values.
+</p>
+<p style="text-align: justify;">
+  I thrive on connecting the dots between <strong>tech teams</strong> and <strong>business goals</strong>, crafting <strong>solutions</strong> that are as <strong>functional</strong> as they are impactful.
+</p>
+<p style="text-align: justify;">
+  When I’m not <strong>coding</strong> or studying, you’ll probably find me on the <strong>tennis court</strong>, out for a <strong>run</strong>, or hanging out with <strong>Sheik</strong>.
+</p>
+<p style="text-align: justify;">
+  Let’s build something amazing together!
+</p>
+
       </div>
     </div>
   </div>
 </section>
 
 <!-- Skills Section -->
-<section id="skills" class="py-16 bg-gray-50">
+<section id="skills" class="py-16" style="background-color: #e1ebed;">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 class="text-3xl font-bold text-center">Skills & Expertise</h2>
     <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
 
       <!-- Skill Item: Development -->
-      <div class="bg-white p-6 shadow-lg hover:shadow-lg rounded-lg transition">
+      <div class="p-6 shadow-lg hover:shadow-lg rounded-lg transition" style="background-color:rgb(243, 237, 229);">
         <div class="flex items-center mb-4 space-x-4">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-code mr-4" viewBox="0 0 16 16">
             <path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8z"/>
           </svg>
           <h3 class="text-xl font-bold">Development</h3>
         </div>
-        <ul class="text-gray-600 space-y-2">
+        <ul class="space-y-2" style="background-color:rgb(243, 237, 229);">
           <li>Ruby on Rails</li>
           <li>HTML / CSS / SCSS</li>
           <li>JavaScript</li>
@@ -95,7 +99,7 @@
       </div>
 
       <!-- Skill Item: Tech Projects -->
-      <div class="bg-white p-6 shadow-lg hover:shadow-lg rounded-lg transition">
+      <div class="p-6 shadow-lg hover:shadow-lg rounded-lg transition" style="background-color:rgb(243, 237, 229);">
         <div class="flex items-center mb-4 space-x-4">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-suitcase-lg mr-4" viewBox="0 0 16 16">
             <path d="M5 2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2h3.5A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5H14a.5.5 0 0 1-1 0H3a.5.5 0 0 1-1 0h-.5A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2zm1 0h4a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1M1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5H3V3zM15 12.5v-9a.5.5 0 0 0-.5-.5H13v10h1.5a.5.5 0 0 0 .5-.5m-3 .5V3H4v10z"/>
@@ -111,7 +115,7 @@
       </div>
 
       <!-- Skill Item: Tools & Methods -->
-      <div class="bg-white p-6 shadow-lg hover:shadow-lg rounded-lg transition">
+      <div class="p-6 shadow-lg hover:shadow-lg rounded-lg transition" style="background-color:rgb(243, 237, 229);">
         <div class="flex items-center mb-4 space-x-4">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-book mr-4" viewBox="0 0 16 16">
             <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
@@ -131,14 +135,14 @@
 </section>
 
 <!-- Portfolio Section -->
-<section id="portfolio" class="py-16 bg-white">
+<section id="portfolio" class="py-16" style="background-color:rgb(243, 237, 229);" >
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="text-3xl font-bold text-center">Projects</h2>
+    <h2 class="text-3xl font-bold text-center">Recent Projects</h2>
     <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
 
       <!-- Roll the Dice Project Card -->
-      <a href="https://msma87.github.io/roll-the-dice-challenge/" target="_blank" rel="noopener noreferrer"
-        class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none;">
+      <a href="https://roll-the-dice-challenge-a18s.vercel.app/" target="_blank" rel="noopener noreferrer"
+        class="shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none; background-color: #e1ebed;">
         <div>
           <img src="/assets/roll-the-dice/preview.png" class="w-full h-48 object-contain" alt="Roll the Dice">
         </div>
@@ -158,8 +162,8 @@
       </a>
 
       <!-- Lights Out Project Card -->
-      <a href="https://msma87.github.io/lights-out-challenge/" target="_blank" rel="noopener noreferrer"
-        class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none;">
+      <a href="https://lights-out-challenge.vercel.app/" target="_blank" rel="noopener noreferrer"
+        class="shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none; background-color: #e1ebed;">
         <div>
           <img src="/assets/lights-out/preview.png" class="w-full h-48 object-contain" alt="Lights Out">
         </div>
@@ -179,7 +183,7 @@
       </a>
 
       <!-- ComportaMente -->
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none;">
+      <div class="shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none; background-color: #e1ebed;">
         <div>
           <img src="/assets/comportamente/home-comportamente.png" class="w-full h-48 object-contain" alt="ComportaMente">
         </div>
@@ -203,7 +207,7 @@
       </div>
       <!-- AmeniTill Card -->
       <a href="https://amenitill.onrender.com/" target="_blank" rel="noopener noreferrer"
-        class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none;">
+        class="shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none; background-color: #e1ebed;">
         <div>
           <img src="/assets/amenitill/AmeniTill.png" class="w-full h-48 object-contain" alt="AmeniTill">
         </div>
@@ -234,7 +238,7 @@
         </div>
       </a>
 
-      <!-- Filipe Tennis Card -->
+      <%# <!-- Filipe Tennis Card -->
       <a href="https://filipe-tennis.onrender.com/" target="_blank" rel="noopener noreferrer"
         class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none;">
         <div>
@@ -257,12 +261,11 @@
             <span style="background-color: #dcfce7; color: #166534; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">Shell</span>
           </div>
         </div>
-      </a>
+      </a> %>
 
       <!-- GigGoers Project Card -->
       <a href="https://giggoers-f8d886acbf20.herokuapp.com/" target="_blank" rel="noopener noreferrer"
-   class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block"
-   style="text-decoration: none;">
+        class="shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none; background-color: #e1ebed;">
         <div>
           <img src="/assets/giggoers/home3.png" class="w-full h-48 object-scale-down" alt="GigGoers">
         </div>
@@ -273,12 +276,20 @@
           <p class="mt-2 text-gray-600">
             Responsive web platform designed to help users discover concerts and music festivals in São Paulo. Built with a mobile-first approach and a strong focus on UX.
           </p>
+          <div style="margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <span style="background-color: #fee2e2; color: #b91c1c; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">Ruby</span>
+            <span style="background-color: #ffedd5; color: #c2410c; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">HTML</span>
+            <span style="background-color: #fce7f3; color: #9d174d; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">SCSS</span>
+            <span style="background-color: #fef9c3; color: #92400e; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">JavaScript</span>
+            <span style="background-color: #e5e7eb; color: #374151; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">Dockerfile</span>
+            <span style="background-color: #dcfce7; color: #166534; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">Shell</span>
+          </div>
         </div>
       </a>
 
       <!-- ChefToi Project Card -->
       <a href="https://cheftoi.onrender.com/" target="_blank" rel="noopener noreferrer"
-        class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none;">
+        class="shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none; background-color: #e1ebed;">
         <div>
           <img src="/assets/cheftoi/home.png" class="w-full h-48 object-contain" alt="ChefToi">
         </div>
@@ -301,7 +312,7 @@
       </a>
 
       <!-- Cronos Project Card (não clicável) -->
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none;">
+      <div class="shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none; background-color: #e1ebed;">
         <div>
           <img src="/assets/cronos/home.png" class="w-full h-48 object-contain" alt="Cronos">
         </div>
@@ -324,7 +335,7 @@
 </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-16 bg-gray-50">
+  <section id="contact" class="py-16" style="background-color: #e1ebed;">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-3xl font-bold">Let's connect!</h2>
       <p class="mt-4 text-lg text-gray-600">
