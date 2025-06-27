@@ -92,7 +92,7 @@
         </div>
         <ul class="space-y-2" style="background-color:rgb(243, 237, 229);">
           <li>Ruby on Rails</li>
-          <li>HTML / CSS / SCSS</li>
+          <li>HTML5 / 3 / SCSS</li>
           <li>JavaScript</li>
           <li>Docker / Dockerfile</li>
           <li>Shell Script</li>
@@ -135,46 +135,103 @@
   </div>
 </section>
 <!-- Portfolio Section -->
-<section id="portfolio" class="py-16" style="background-color:rgb(243, 237, 229);" >  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-  <h2 class="text-3xl font-bold text-center">Projetos Recentes</h2>
+<style>
+  .tech-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 999px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .tech-badge:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+</style>
+
+<section id="portfolio" class="py-16" style="background-color:rgb(243, 237, 229);">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center">Projetos Recentes</h2>
     <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
 
-      <!-- Roll the Dice Project Card -->
-      <a href="https://roll-the-dice-challenge-a18s.vercel.app/" target="_blank" rel="noopener noreferrer" class="shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none; background-color: #e1ebed;">
+      <!-- GigGoers -->
+      <a href="https://giggoers-f8d886acbf20.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none; background-color: #e1ebed;">
         <div>
-          <img src="/assets/roll-the-dice/preview.png" class="w-full h-48 object-contain" alt="Roll the Dice">
+          <img src="/assets/giggoers/home3.png" class="w-full h-48 object-scale-down" alt="GigGoers">
         </div>
         <div class="p-6">
           <div class="flex justify-between items-center">
-            <h3 class="text-xl font-bold min-w-[120px] text-left">Roll the Dice</h3>
+            <h3 class="text-xl font-bold min-w-[120px] text-left">GigGoers</h3>
           </div>
           <p class="mt-2 text-gray-600">
-            Projeto full-stack desenvolvido a partir de um desafio técnico prático. Permite escolher entre diferentes tipos de dados reais, enviar a escolha para o back-end e exibir o resultado da rolagem com resposta da API.
+            Aplicação web responsiva desenvolvida em Ruby on Rails para descoberta de eventos musicais em São Paulo. Implementei sistema de busca avançada com filtros por localização e data, integração com API externa para dados atualizados de eventos, e design mobile-first focado na experiência do usuário.
+          </p>
+          <p class="mt-2 text-gray-600">
+            Projeto colaborativo desenvolvido em 2 semanas utilizando metodologia ágil, Git para versionamento e deploy automatizado. Demonstra habilidades em UX/UI design, desenvolvimento full-stack e trabalho em equipe.
           </p>
           <div style="margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
-            <span style="background-color: #ffedd5; color: #c2410c; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">HTML</span>
-            <span style="background-color: #dbeafe; color: #1d4ed8; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">CSS</span>
-            <span style="background-color: #fef9c3; color: #92400e; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">JavaScript</span>
+            <span class="tech-badge" style="background-color: #cc0000; color: white;">Ruby on Rails</span>
+            <span class="tech-badge" style="background-color: #f7df1e; color: #000000;">JavaScript</span>
+            <span class="tech-badge" style="background-color: #cd6799; color: white;">SCSS</span>
+            <span class="tech-badge" style="background-color: #e34c26; color: white;">HTML5</span>
+            <span class="tech-badge" style="background-color: #fcd34d; color: #78350f;">Integração API</span>
+            <span class="tech-badge" style="background-color: #e5e7eb; color: #374151;">Dockerfile</span>
           </div>
         </div>
       </a>
 
-      <!-- Lights Out Project Card -->
-      <a href="https://lights-out-challenge.vercel.app/" target="_blank" rel="noopener noreferrer" class="shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none; background-color: #e1ebed;">
+      <!-- ChefToi -->
+      <a href="https://cheftoi.onrender.com/" target="_blank" rel="noopener noreferrer" class="shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none; background-color: #e1ebed;">
         <div>
-          <img src="/assets/lights-out/preview.png" class="w-full h-48 object-contain" alt="Lights Out">
+          <img src="/assets/cheftoi/home.png" class="w-full h-48 object-contain" alt="ChefToi">
         </div>
         <div class="p-6">
           <div class="flex justify-between items-center">
-            <h3 class="text-xl font-bold min-w-[120px] text-left">Lights Out</h3>
+            <h3 class="text-xl font-bold min-w-[120px] text-left">ChefToi</h3>
           </div>
           <p class="mt-2 text-gray-600">
-            Landing page criada a partir de um desafio técnico com tema de viagem. Apresenta alternância entre temas claro e escuro, com foco em responsividade e experiência do usuário.
+            Marketplace online full-stack conectando chefs pessoais a clientes, com sistema completo de reservas e avaliações. Desenvolvido com foco em usabilidade, fluxo de reservas intuitivo e interface responsiva para diferentes dispositivos.
+          </p>
+          <p class="mt-2 text-gray-600">
+            Projeto entregue em uma semana através de desenvolvimento ágil em equipe, demonstrando capacidade de resolução rápida de problemas e adaptabilidade. Inclui funcionalidades de cadastro de usuários, busca de chefs por localização e sistema de pagamentos.
           </p>
           <div style="margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
-            <span style="background-color: #ffedd5; color: #c2410c; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">HTML</span>
-            <span style="background-color: #dbeafe; color: #1d4ed8; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">CSS</span>
-            <span style="background-color: #fef9c3; color: #92400e; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">JavaScript</span>
+            <span class="tech-badge" style="background-color: #cc0000; color: white;">Ruby on Rails</span>
+            <span class="tech-badge" style="background-color: #f7df1e; color: #000000;">JavaScript</span>
+            <span class="tech-badge" style="background-color: #cd6799; color: white;">SCSS</span>
+            <span class="tech-badge" style="background-color: #e34c26; color: white;">HTML5</span>
+            <span class="tech-badge" style="background-color: #336791; color: white;">PostgreSQL</span>
+            <span class="tech-badge" style="background-color: #0db7ed; color: white;">Docker</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- AmeniTill -->
+      <a href="https://amenitill.onrender.com/" target="_blank" rel="noopener noreferrer" class="shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none; background-color: #e1ebed;">
+        <div>
+          <img src="/assets/amenitill/AmeniTill.png" class="w-full h-48 object-contain" alt="AmeniTill">
+        </div>
+        <div class="p-6">
+          <div class="flex justify-between items-center">
+            <h3 class="text-xl font-bold min-w-[120px] text-left">AmeniTill</h3>
+          </div>
+          <p class="mt-2 text-gray-600">
+            Sistema de ponto de venda desenvolvido em Ruby on Rails com lógica de negócio complexa, implementando regras promocionais dinâmicas (compre 2, leve 3, descontos por quantidade) e cálculo automático de preços com múltiplos tipos de desconto.
+          </p>
+          <p class="mt-2 text-gray-600">
+            Projeto focado em TDD (Test-Driven Development), simplicidade de código e facilidade de manutenção. Demonstra habilidades em algoritmos, lógica de programação avançada e arquitetura de software bem estruturada.
+          </p>
+          <div style="margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <span class="tech-badge" style="background-color: #cc0000; color: white;">Ruby on Rails</span>
+            <span class="tech-badge" style="background-color: #f7df1e; color: #000000;">JavaScript</span>
+            <span class="tech-badge" style="background-color: #e34c26; color: white;">HTML5</span>
+            <span class="tech-badge" style="background-color: #264de4; color: white;">CSS3</span>
+            <span class="tech-badge" style="background-color: #336791; color: white;">PostgreSQL</span>
+            <span class="tech-badge" style="background-color: #ede9fe; color: #6b21a8;">TDD</span>
           </div>
         </div>
       </a>
@@ -190,139 +247,69 @@
           </div>
           <span class="text-sm text-gray-500 italic">🔒 Projeto interno — não disponível publicamente</span>
           <p class="mt-2 text-gray-600">
-            Trabalho voluntário como desenvolvedora júnior full-stack utilizando Python e Django. Contribuí para a criação de funcionalidades na plataforma ComportaMente, voltada para acolhimento e saúde mental.
+            Projeto voluntário focado em saúde mental e educação, onde contribuo como desenvolvedora full-stack utilizando Python e Django. Sistema educacional com foco em performance, escalabilidade e experiência do usuário.
           </p>
-          <!-- BADGES DE LINGUAGENS E FRAMEWORKS -->
+          <p class="mt-2 text-gray-600">
+            Desenvolvimento de funcionalidades para plataforma voltada ao acolhimento e saúde mental, implementando boas práticas de código, arquitetura escalável e design centrado no usuário. Projeto que combina impacto social com excelência técnica.
+          </p>
           <div style="margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
-            <span style="background-color: #fee2e2; color: #b91c1c; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);">Django</span>
-            <span style="background-color: #ffedd5; color: #c2410c; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);">HTML</span>
-            <span style="background-color: #dbeafe; color: #1d4ed8; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);">CSS</span>
-            <span style="background-color: #dcfce7; color: #166534; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);">Python</span>
-            <span style="background-color: #fef9c3; color: #92400e; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);">JavaScript</span>
+            <span class="tech-badge" style="background-color: #092e20; color: white;">Django</span>
+            <span class="tech-badge" style="background-color: #e34c26; color: white;">HTML5</span>
+            <span class="tech-badge" style="background-color: #264de4; color: white;">CSS3</span>
+            <span class="tech-badge" style="background-color: #3776ab; color: white;">Python</span>
+            <span class="tech-badge" style="background-color: #f7df1e; color: #000000;">JavaScript</span>
+            <span class="tech-badge" style="background-color: #336791; color: white;">PostgreSQL</span>
           </div>
         </div>
       </div>
-      <!-- AmeniTill Card -->
-      <a href="https://amenitill.onrender.com/" target="_blank" rel="noopener noreferrer"
-        class="shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none; background-color: #e1ebed;">
-        <div>
-          <img src="/assets/amenitill/AmeniTill.png" class="w-full h-48 object-contain" alt="AmeniTill">
-        </div>
-        <div class="p-6">
-          <div class="flex justify-between items-center">
-            <h3 class="text-xl font-bold min-w-[120px] text-left">AmeniTill</h3>
-          </div>
-          <p class="mt-2 text-gray-600">
-             Aplicação web desenvolvida com Ruby on Rails para simular um sistema de caixa registradora com regras promocionais dinâmicas. Permite adicionar produtos ao carrinho e calcular automaticamente o total com descontos, como "leve 2, pague 1" ou preços reduzidos por quantidade. Projeto com foco em TDD, simplicidade e manutenção.
-          </p>
-          <!-- BADGES DE LINGUAGENS E FRAMEWORKS -->
-          <div style="margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
-            <span style="background-color: #fee2e2; color: #b91c1c; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-          ">Ruby</span>
-            <span style="background-color: #ffedd5; color: #c2410c; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-          ">HTML</span>
-            <span style="background-color: #dbeafe; color: #1d4ed8; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-          ">CSS</span>
-            <span style="background-color: #e5e7eb; color: #374151; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-          ">Dockerfile</span>
-            <span style="background-color: #dcfce7; color: #166534; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-          ">Shell</span>
-            <span style="background-color: #fef9c3; color: #92400e; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-          ">JavaScript</span>
-            <span style="background-color: #ede9fe; color: #6b21a8; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-          ">Procfile</span>
-          </div>
-        </div>
-      </a>
-      <%# <!-- Filipe Tennis Card -->
-      <a href="https://filipe-tennis.onrender.com/" target="_blank" rel="noopener noreferrer"
-        class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none;">
-        <div>
-          <img src="/assets/filipe-tennis/home.png" class="w-full h-48 object-contain" alt="Filipe Tennis">
-        </div>
-        <div class="p-6">
-          <div class="flex justify-between items-center">
-            <h3 class="text-xl font-bold min-w-[120px] text-left">Filipe Tennis</h3>
-          </div>
-          <p class="mt-2 text-gray-600">
-             Website responsivo desenvolvido para meu professor de tênis, Filipe Passos da Silva, com foco na apresentação de suas aulas, metodologia e canais de contato.
-          </p>
-          <div style="margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
-            <span style="background-color: #fee2e2; color: #b91c1c; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">Ruby</span>
-            <span style="background-color: #ffedd5; color: #c2410c; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">HTML</span>
-            <span style="background-color: #dbeafe; color: #1d4ed8; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">CSS</span>
-            <span style="background-color: #e5e7eb; color: #374151; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">Dockerfile</span>
-            <span style="background-color: #fef9c3; color: #92400e; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">JavaScript</span>
-            <span style="background-color: #fce7f3; color: #9d174d; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">SCSS</span>
-            <span style="background-color: #dcfce7; color: #166534; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">Shell</span>
-          </div>
-        </div>
-      </a> %>
 
-      <!-- GigGoers Project Card -->
-      <a href="https://giggoers-f8d886acbf20.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none; background-color: #e1ebed;">
+      <!-- Lights Out -->
+      <a href="https://lights-out-challenge.vercel.app/" target="_blank" rel="noopener noreferrer" class="shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none; background-color: #e1ebed;">
         <div>
-          <img src="/assets/giggoers/home3.png" class="w-full h-48 object-scale-down" alt="GigGoers">
+          <img src="/assets/lights-out/preview.png" class="w-full h-48 object-contain" alt="Lights Out">
         </div>
         <div class="p-6">
           <div class="flex justify-between items-center">
-            <h3 class="text-xl font-bold min-w-[120px] text-left">GigGoers</h3>
+            <h3 class="text-xl font-bold min-w-[120px] text-left">Lights Out</h3>
           </div>
           <p class="mt-2 text-gray-600">
-            Plataforma web responsiva criada para ajudar usuários a descobrirem shows e festivais de música na cidade de São Paulo. Desenvolvida com foco em UX e design mobile-first.
+            Landing page responsiva criada com tema de viagem, demonstrando habilidades em frontend e design thinking. Desenvolvida com foco em experiência do usuário, apresentando alternância entre temas claro e escuro e design visual atrativo.
+          </p>
+          <p class="mt-2 text-gray-600">
+          Projeto que explora técnicas avançadas de CSS, JavaScript interativo e princípios de design responsivo. Demonstra atenção aos detalhes visuais e capacidade de criar interfaces envolventes.
           </p>
           <div style="margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
-            <span style="background-color: #fee2e2; color: #b91c1c; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">Ruby</span>
-            <span style="background-color: #ffedd5; color: #c2410c; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">HTML</span>
-            <span style="background-color: #fce7f3; color: #9d174d; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">SCSS</span>
-            <span style="background-color: #fef9c3; color: #92400e; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">JavaScript</span>
-            <span style="background-color: #e5e7eb; color: #374151; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">Dockerfile</span>
-            <span style="background-color: #dcfce7; color: #166534; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">Shell</span>
+            <span class="tech-badge" style="background-color: #e34c26; color: white;">HTML5</span>
+            <span class="tech-badge" style="background-color: #264de4; color: white;">CSS3</span>
+            <span class="tech-badge" style="background-color: #f7df1e; color: #000000;">JavaScript</span>
+            <span class="tech-badge" style="background-color: #a5f3fc; color: #083344;">Design Responsivo</span>
           </div>
         </div>
       </a>
 
-      <!-- ChefToi Project Card -->
-      <a href="https://cheftoi.onrender.com/" target="_blank" rel="noopener noreferrer"
-        class="shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none; background-color: #e1ebed;">
+      <!-- Roll the Dice -->
+      <a href="https://roll-the-dice-challenge-a18s.vercel.app/" target="_blank" rel="noopener noreferrer" class="shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none; background-color: #e1ebed;">
         <div>
-          <img src="/assets/cheftoi/home.png" class="w-full h-48 object-contain" alt="ChefToi">
+          <img src="/assets/roll-the-dice/preview.png" class="w-full h-48 object-contain" alt="Roll the Dice">
         </div>
         <div class="p-6">
           <div class="flex justify-between items-center">
-            <h3 class="text-xl font-bold min-w-[120px] text-left">ChefToi</h3>
+            <h3 class="text-xl font-bold min-w-[120px] text-left">Roll the Dice</h3>
           </div>
           <p class="mt-2 text-gray-600">
-            Marketplace web responsivo desenvolvido para conectar chefs pessoais a clientes. Projeto focado em usabilidade, fluxo de reservas e expansão futura para outros serviços personalizados.
+            Aplicação web simples e funcional para rolagem de dados, desenvolvida como projeto de prática técnica. Permite escolha entre diferentes tipos de dados reais, envio da escolha para o backend e exibição do resultado da rolagem com resposta da API.
+          </p>
+          <p class="mt-2 text-gray-600">
+            Projeto que demonstra fundamentos sólidos em desenvolvimento full-stack, integração frontend-backend e manipulação de APIs. Foco em simplicidade, funcionalidade e código limpo.
           </p>
           <div style="margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
-            <span style="background-color: #fee2e2; color: #b91c1c; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">Ruby</span>
-            <span style="background-color: #ffedd5; color: #c2410c; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">HTML</span>
-            <span style="background-color: #fce7f3; color: #9d174d; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">SCSS</span>
-            <span style="background-color: #e5e7eb; color: #374151; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">Dockerfile</span>
+            <span class="tech-badge" style="background-color: #e34c26; color: white;">HTML5</span>
+            <span class="tech-badge" style="background-color: #264de4; color: white;">CSS3</span>
+            <span class="tech-badge" style="background-color: #f7df1e; color: #000000;">JavaScript</span>
+            <span class="tech-badge" style="background-color: #fcd34d; color: #78350f;">Integração API</span>
           </div>
         </div>
       </a>
-
-      <!-- Cronos Project Card (não clicável) -->
-      <div class="shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 text-left block" style="text-decoration: none; background-color: #e1ebed;">
-        <div>
-          <img src="/assets/cronos/home.png" class="w-full h-48 object-contain" alt="Cronos">
-        </div>
-        <div class="p-6">
-          <div class="flex justify-between items-center">
-            <h3 class="text-xl font-bold min-w-[120px] text-left">Cronos</h3>
-          </div>
-          <span class="text-sm text-gray-500 italic">🔒 Projeto interno — não disponível publicamente.</span>
-          <p class="mt-2 text-gray-600">
-            Design de identidade visual da plataforma interna de tutoria da empresa Cronos. O projeto envolveu definição de paleta de cores, logotipo e diretrizes visuais aplicadas ao painel administrativo.
-          </p>
-          <div class="mt-3 flex flex-wrap gap-2">
-            <span style="background-color: #ffedd5; color: #c2410c; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">HTML</span>
-            <span style="background-color: #dbeafe; color: #1d4ed8; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">CSS</span>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -330,7 +317,7 @@
   <!-- Contact Section -->
   <section id="contact" class="py-16" style="background-color: #e1ebed;">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-3xl font-bold">Vamos nos conectar!</h2>
+      <h2 class="text-3xl font-bold">Vamos conversar sobre seu próximo projeto?</h2>
       <p class="mt-4 text-lg text-gray-600">
         Estou aberta a novas oportunidades e adoraria ouvir você.
         </p>
